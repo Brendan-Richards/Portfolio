@@ -2,38 +2,43 @@ import React, { useRef, useEffect, useState } from 'react';
 
 const WelcomeText = (props) => {
 
-    const padAmount = 20;
-    
-    const padString = padAmount.toString() + 'px ' + padAmount.toString() + 'px ' 
-        + padAmount.toString() + 'px ' + padAmount.toString() + 'px';
-
     const offsetX = 600;
-    const offsetY = 1000
+    const offsetY = 1000;
 
-    const textStyle = {
-        color: 'white', 
-        padding: padString,
-        fontSize: '50px',
-        opacity: '1'
+    const nameSize = window.innerWidth > 550 ? '50px': '30px';
+    const jobSize = window.innerWidth > 550 ? '35px': '23px';
+
+    const textStyleName = {
+        color: 'black', 
+        padding: '20px 20px 0px 20px',
+        fontSize: nameSize,
+        margin: '0',
+        fontFamily: 'Helvetica',
+        fontWeight: 'bold'
     }
 
+    const textStyleJobs = {
+        ...textStyleName,
+        fontSize: jobSize,
+        padding: '20px 20px 20px 20px',
+
+    }
 
     const boxStyle = {
-        bottom: (props.offset+offsetY)/2,
+        bottom: (props.offset)/3 ,
         position: 'absolute',
-        textAlign: 'center',
-        // top: (props.height)/2,
-        left: (props.width-offsetX)/2,
-        opacity: '0.75',
-        backgroundColor: '#003311',
-        borderRadius: '25px',
-        boxShadow: '0px 0px 27px 1px rgba(0,0,0,0.57)'
+        textAlign: 'left',
+        backgroundColor: 'white',
+        width: '100%',
+        background: 'rgba(255,255,255,0.5)'
     }
 
     return (
         <div style={boxStyle}>
-            <p style={textStyle}>Brendan Richards  <br /> Software Engineer, Musician</p>
+            <p style={textStyleName}>Brendan Richards</p>
+            <p style={textStyleJobs}>Software Engineer, Musician</p>
         </div>    
+
     );
 }
 

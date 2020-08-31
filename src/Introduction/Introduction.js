@@ -1,5 +1,6 @@
 import React from 'react';
-import mountains from '../images/mountain_banner_small.jpg';
+//import mountains from '../images/mountain_banner_small.jpg';
+import mountains from '../images/mountain4.jpg';
 import WelcomeText from './WelcomeText';
 
 const Introduction = (props) => {
@@ -7,18 +8,22 @@ const Introduction = (props) => {
     const imgStyle = {
         objectFit: 'cover',
         width: '100%',
-        height: props.height,
+        height: window.innerHeight,
+        padding: '0px',
+        margin: '0px'
     } 
 
     const containerStyle = {
         position: 'relative',  
-        backgroundPositionY: props.offset
+        backgroundPositionY: props.offset,
+        margin: '0px',
+        padding: '0px'
     }
 
     return (
         <div style={containerStyle} >
             <img src={mountains} style={imgStyle} alt="mountains"/>
-            <WelcomeText height={props.height} width={props.width} offset={props.offset}/>
+            <WelcomeText offset={props.offset}/>
         </div>
         
     );
