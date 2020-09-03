@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Introduction from './Introduction/Introduction';
 import Content from './Content/Content';
 import TitleBar from './TitleBar';

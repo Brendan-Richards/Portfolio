@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 
 const WelcomeText = (props) => {
 
@@ -33,11 +33,26 @@ const WelcomeText = (props) => {
         background: 'rgba(255,255,255,0.5)'
     }
 
+
+    const arrowStyle = {
+        width: '20px',
+        height: '20px',
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        padding: '0px 0px 5px 0px'
+    }
+
     return (
-        <div style={boxStyle}>
-            <p style={textStyleName}>Brendan Richards</p>
-            <p style={textStyleJobs}>Software Engineer, Musician</p>
-        </div>    
+        <div>
+            <div style={boxStyle}>
+                <p style={textStyleName}>Brendan Richards</p>
+                <p style={textStyleJobs}>Software Engineer, Musician</p>
+                {/* <div>
+                    <img src={downArrow} style={arrowStyle} alt="Down Arrow"/>
+                </div> */}
+            </div>  
+        </div>  
 
     );
 }

@@ -1,7 +1,6 @@
 import React from 'react';
-//import mountains from '../images/mountain_banner_small.jpg';
 import mountains from '../images/mountain4.jpg';
-import WelcomeText from './WelcomeText';
+import WelcomeText from './WelcomeText/WelcomeText';
 
 const Introduction = (props) => {
 
