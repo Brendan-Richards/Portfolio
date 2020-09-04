@@ -1,0 +1,40 @@
+.MyName {
+    color: var(--title-text); 
+    padding: 20px 20px 0px 20px;
+    font-size: 32px;
+    margin: 0;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.MyTitles {
+    color: var(--title-text); 
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    margin: 0;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.BackingRect {
+    position: absolute;
+    text-align: center;
+
+    width: 100%;
+    background: rgba(var(--dark-green-rgb),0.7);
+    /* background: rgba(255,255,255,0.5); */
+}
+
+@media only screen and (min-width: 500px) {
+    .MyName {
+        font-size: 50px;
+    }
+    
+    .MyTitles {
+        font-size: 28px;
+    }
+    
+    .BackingRect {
+        text-align: left;
+    }
+}

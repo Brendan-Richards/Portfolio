@@ -1,0 +1,32 @@
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.HorizontalSpacer {
+    background-color: black;
+    height: 2px;
+    width: 35%;
+    padding: 0;
+    margin: 0;
+}
+
+.VerticalSpacer {
+    background-color: black;
+    height: 100%;
+    width: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 500px) {
+    .NavigationItems {
+        flex-flow: row;
+        width: 100%;
+    }
+}

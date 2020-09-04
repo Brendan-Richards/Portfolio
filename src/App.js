@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Introduction from './Introduction/Introduction';
 import Content from './Content/Content';
-import TitleBar from './TitleBar';
+import Navbar from './Navbar/Navbar';
+import classes from './App.module.css';
 
 
 class App extends Component {
@@ -9,7 +10,8 @@ class App extends Component {
     super(props);
   
     this.state = {
-      offset: 0
+      offset: 0,
+      showDrawer: false
     };
   }
 
@@ -19,6 +21,18 @@ class App extends Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.parallaxShift);
   }
+
+  toggleClickedHandler = () => {
+    this.setState((oldState) =>{
+      return {showDrawer: !oldState.showDrawer}
+    });
+  }
+
+  topDrawerClosedHandler = () => {
+    this.setState({showDrawer: false})
+  }
+
+
   parallaxShift = () => {
     this.setState({
       offset: window.pageYOffset
@@ -27,11 +41,21 @@ class App extends Component {
 
 
   render () {
+    console.log(this.state.showDrawer)
+
     return (
+
       <div>
-        <Introduction offset={this.state.offset} />
+        <Introduction 
+          offset={this.state.offset} 
+          toggleClicked={this.toggleClickedHandler}
+          showDrawer={this.state.showDrawer} 
+          closeDrawer={this.topDrawerClosedHandler} 
+          />
         <div style={{position: 'relative', top: -(this.state.offset)/6}}>
-          <TitleBar />
+        {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }
+          {window.innerWidth > 500 ? <Navbar orientation='horizontal'/> : null}
+          {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }
           <Content />
         </div>
       </div>

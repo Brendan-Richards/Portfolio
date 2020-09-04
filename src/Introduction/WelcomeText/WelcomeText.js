@@ -1,56 +1,19 @@
 import React from 'react';
+import classes from './WelcomeText.module.css';
 
 const WelcomeText = (props) => {
 
-    const offsetX = 600;
-    const offsetY = 1000;
-
-    const nameSize = window.innerWidth > 550 ? '50px': '30px';
-    const jobSize = window.innerWidth > 550 ? '35px': '23px';
-
-    const textStyleName = {
-        color: 'black', 
-        padding: '20px 20px 0px 20px',
-        fontSize: nameSize,
-        margin: '0',
-        fontFamily: 'Helvetica',
-        fontWeight: 'bold'
-    }
-
-    const textStyleJobs = {
-        ...textStyleName,
-        fontSize: jobSize,
-        padding: '20px 20px 20px 20px',
-
-    }
-
-    const boxStyle = {
-        bottom: (props.offset)/3 ,
-        position: 'absolute',
-        textAlign: 'left',
-        backgroundColor: 'white',
-        width: '100%',
-        background: 'rgba(255,255,255,0.5)'
-    }
-
-
-    const arrowStyle = {
-        width: '20px',
-        height: '20px',
-        display: 'block',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        padding: '0px 0px 5px 0px'
-    }
+    const rectPosition = {
+        bottom: (props.offset)/2
+    };
 
     return (
         <div>
-            <div style={boxStyle}>
-                <p style={textStyleName}>Brendan Richards</p>
-                <p style={textStyleJobs}>Software Engineer, Musician</p>
-                {/* <div>
-                    <img src={downArrow} style={arrowStyle} alt="Down Arrow"/>
-                </div> */}
+            <div 
+                style={rectPosition} 
+                className={classes.BackingRect}>
+                    <p className={classes.MyName}>Brendan Richards</p>
+                    <p className={classes.MyTitles}>Software Engineer, Musician</p>
             </div>  
         </div>  
 

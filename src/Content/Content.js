@@ -1,22 +1,18 @@
 import React from 'react';
+import classes from './Content.module.css';
+import Page from './Page/Page';
+//import AboutMeImage from '../images/AboutMe.jpg';
+//import AboutMeImage from '../images/AboutMe.jpg';
 
 
 const Content = (props) => {
 
-    const contentStyle = {
-        textAlign: 'center',
-        backgroundColor: 'green',
-        height: '5000px',
-        position: 'relative',
-        top: 0,
-        margin: '0px',
-        padding: '0px',
-        //top: -(props.offset)/3
-    }
-
     return (
-        <div style={contentStyle}>
-            content
+        <div className={classes.Content} style={{top: -(props.offset)/3}}>
+            {/* <Page title='About Me'/>
+            <Page />
+            <Page />
+            <Page /> */}
         </div>
     );
 };
