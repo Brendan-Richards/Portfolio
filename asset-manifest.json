@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.fcffcf93.chunk.css",
+    "main.js": "/Portfolio/static/js/main.fe8c1390.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.fe8c1390.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
+    "static/js/2.3ed7cf04.chunk.js": "/Portfolio/static/js/2.3ed7cf04.chunk.js",
+    "static/js/2.3ed7cf04.chunk.js.map": "/Portfolio/static/js/2.3ed7cf04.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.97ce76d19989a59932582426c0595122.js": "/Portfolio/precache-manifest.97ce76d19989a59932582426c0595122.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.fcffcf93.chunk.css.map": "/Portfolio/static/css/main.fcffcf93.chunk.css.map",
+    "static/js/2.3ed7cf04.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.3ed7cf04.chunk.js.LICENSE.txt",
+    "static/media/Bloch_sphere.svg": "/Portfolio/static/media/Bloch_sphere.b97c8736.svg",
+    "static/media/dissonanceCurves.jpg": "/Portfolio/static/media/dissonanceCurves.85bf6589.jpg",
+    "static/media/email.jpg": "/Portfolio/static/media/email.690e7d36.jpg",
+    "static/media/meplaying.png": "/Portfolio/static/media/meplaying.a6d9fa74.png",
+    "static/media/mountain4.jpg": "/Portfolio/static/media/mountain4.1659f151.jpg",
+    "static/media/myself.jpg": "/Portfolio/static/media/myself.93b1cd99.jpg",
+    "static/media/phone.png": "/Portfolio/static/media/phone.319d45b4.png",
+    "static/media/pianoroll.jpg": "/Portfolio/static/media/pianoroll.1fda4069.jpg",
+    "static/media/word2vec.png": "/Portfolio/static/media/word2vec.58ac671a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e440ee5a.js",
+    "static/js/2.3ed7cf04.chunk.js",
+    "static/css/main.fcffcf93.chunk.css",
+    "static/js/main.fe8c1390.chunk.js"
+  ]
+}
