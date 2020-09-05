@@ -1,5 +1,5 @@
 import React from 'react';
-import mountains from '../images/mountain4.jpg';
+import mountains from '../images/Intro/mountain4.jpg';
 import WelcomeText from './WelcomeText/WelcomeText';
 import classes from './Introduction.module.css';
 import DrawerToggle from './DrawerToggle/DrawerToggle';
@@ -16,6 +16,10 @@ const Introduction = (props) => {
                 <SlideDrawer 
                     open={props.showDrawer}
                     closed={props.closeDrawer}
+                    aboutClicked={props.aboutClicked}
+                    projectsClicked={props.projectsClicked}
+                    musicClicked={props.musicClicked}
+                    contactClicked={props.contactClicked}
                     />
                 <Backdrop 
                     show={props.showDrawer}

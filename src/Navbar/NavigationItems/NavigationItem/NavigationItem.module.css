@@ -28,7 +28,6 @@
 .NavigationItem div.active  {
     color:  black;
     background-color: var(--light-green);
-    transform: scale(1.03);
     box-shadow: 1px 1px 18px black;
 }
 

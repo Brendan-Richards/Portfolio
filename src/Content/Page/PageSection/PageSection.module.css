@@ -6,17 +6,55 @@
 
 .Link {
     padding-top: 20px;
+    padding-bottom: 50px;
     background-color: white;
     font-size: 20px;
     font-family: Helvetica;
     font-weight: bold;
 }
 
-.Link a {
+.ContactSection {
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.ContactImage {
+    flex: 1;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.ContactLink {
+    flex: 5;
+    margin-top: 10px;
+
+}
+
+.ContactFlexContainer {
+    /* background-color: purple; */
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    max-width: 75%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.ContactSection a {
     text-decoration: none;
     color: var(--light-green)
 }
-.Link a:hover {
+.ContactSection a:hover {
+    text-decoration: none;
+    color: var(--dark-blue)
+}
+
+.Section a {
+    text-decoration: none;
+    color: var(--light-green)
+}
+.Section a:hover {
     text-decoration: none;
     color: var(--dark-blue)
 }
@@ -52,13 +90,19 @@
     font-weight: bold;
 }
 
+.Explanation p {
+    text-align: left;
+    text-indent: 40px;
+}
+
 .FlexContainer {
     /* background-color: purple; */
     display: flex;
     height: auto;
     flex-direction: column;
     max-width: 80%;
-    align-items: stretch;
+    align-items: center;
+
     margin: 0 auto;
 }
 
@@ -106,5 +150,31 @@
         margin: 0 auto;
     } 
     
+    .ContactSection {
+        overflow: hidden;
+        text-align: center;
+    
+    }
+    
+    .ContactImage {
+        flex: 1;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+    
+    .ContactLink {
+        flex: 1;
+        margin-top: 10px;
+    }
+    
+    .ContactFlexContainer {
+        /* background-color: purple; */
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        max-width: 50%;
+        align-items: center;
+        margin: 0 auto;
+    }
 
 }

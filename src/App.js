@@ -42,21 +42,19 @@ class App extends Component {
   };
 
   aboutClickedHandler = () => {
-    this.setState({page: 'AboutMe'});
-    console.log('about me was clicked!');
+    this.setState({page: 'AboutMe', showDrawer: false});
   }
 
   projectsClickedHandler = () => {
-    this.setState({page: 'Projects'});   
-    console.log('projects was clicked!');
+    this.setState({page: 'Projects', showDrawer: false});   
   }
 
   musicClickedHandler = () => {
-    this.setState({page: 'Music'});    
+    this.setState({page: 'Music', showDrawer: false});    
   }
 
   contactClickedHandler = () => {
-    this.setState({page: 'Contact'});    
+    this.setState({page: 'Contact', showDrawer: false});    
   }
 
 
@@ -71,6 +69,10 @@ class App extends Component {
           toggleClicked={this.toggleClickedHandler}
           showDrawer={this.state.showDrawer} 
           closeDrawer={this.topDrawerClosedHandler} 
+          aboutClicked={this.aboutClickedHandler}
+          projectsClicked={this.projectsClickedHandler}
+          musicClicked={this.musicClickedHandler}
+          contactClicked={this.contactClickedHandler}
           />
         <div style={{position: 'relative', top: -(this.state.offset)/6}} className="big-container">
           {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }

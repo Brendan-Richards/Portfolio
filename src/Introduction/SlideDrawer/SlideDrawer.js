@@ -11,7 +11,12 @@ const SlideDrawer = (props) => {
 
     return (
         <div className={attachedClasses.join(' ')}>
-            <Navbar orientation={'vertical'} />
+            <Navbar 
+                orientation={'vertical'}
+                aboutClicked={props.aboutClicked}
+                projectsClicked={props.projectsClicked}
+                musicClicked={props.musicClicked}
+                contactClicked={props.contactClicked} />
         </div>
     );
 
