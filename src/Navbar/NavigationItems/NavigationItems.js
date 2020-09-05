@@ -10,17 +10,23 @@ const navigationItems = (props) => {
     }
     
     return (
+        // <ul className={classes.NavigationItems}>
+        //     <NavigationItem link='/' orientation={props.orientation}>About Me</NavigationItem>
+        //     <div className={spacerClass}></div>
+        //     <NavigationItem link='/' orientation={props.orientation}>Projects</NavigationItem>
+        //     <div className={spacerClass}></div>
+        //     <NavigationItem link='/' orientation={props.orientation}>Music</NavigationItem>
+        //     <div className={spacerClass}></div>
+        //     <NavigationItem link='/' orientation={props.orientation}>Contact</NavigationItem>
+        // </ul>
         <ul className={classes.NavigationItems}>
-            <NavigationItem link='/' active orientation={props.orientation}>About Me</NavigationItem>
-            <div className={spacerClass}></div>
-            <NavigationItem link='/' orientation={props.orientation}>Projects</NavigationItem>
-            <div className={spacerClass}></div>
-            <NavigationItem link='/' orientation={props.orientation}>Music</NavigationItem>
-            <div className={spacerClass}></div>
-            <NavigationItem link='/' orientation={props.orientation}>Contact</NavigationItem>
+            <NavigationItem clicked={props.aboutClicked} orientation={props.orientation}>About Me</NavigationItem>
+            <NavigationItem clicked={props.projectsClicked} orientation={props.orientation}>Projects</NavigationItem>
+            <NavigationItem clicked={props.musicClicked} orientation={props.orientation}>Music</NavigationItem>
+            <NavigationItem clicked={props.contactClicked} orientation={props.orientation}>Contact</NavigationItem>
         </ul>
     );
 }
 
 
-export default navigationItems;
+export default React.memo(navigationItems);

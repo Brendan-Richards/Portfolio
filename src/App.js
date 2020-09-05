@@ -3,6 +3,7 @@ import Introduction from './Introduction/Introduction';
 import Content from './Content/Content';
 import Navbar from './Navbar/Navbar';
 import classes from './App.module.css';
+import { AutoComplete } from 'rsuite';
 
 
 class App extends Component {
@@ -11,7 +12,8 @@ class App extends Component {
   
     this.state = {
       offset: 0,
-      showDrawer: false
+      showDrawer: false,
+      page: 'AboutMe'
     };
   }
 
@@ -39,24 +41,49 @@ class App extends Component {
     });
   };
 
+  aboutClickedHandler = () => {
+    this.setState({page: 'AboutMe'});
+    console.log('about me was clicked!');
+  }
+
+  projectsClickedHandler = () => {
+    this.setState({page: 'Projects'});   
+    console.log('projects was clicked!');
+  }
+
+  musicClickedHandler = () => {
+    this.setState({page: 'Music'});    
+  }
+
+  contactClickedHandler = () => {
+    this.setState({page: 'Contact'});    
+  }
+
 
   render () {
-    console.log(this.state.showDrawer)
+    //console.log(this.state.showDrawer)
 
     return (
 
-      <div>
+      <div className={classes.Hello}>
         <Introduction 
           offset={this.state.offset} 
           toggleClicked={this.toggleClickedHandler}
           showDrawer={this.state.showDrawer} 
           closeDrawer={this.topDrawerClosedHandler} 
           />
-        <div style={{position: 'relative', top: -(this.state.offset)/6}}>
-        {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }
-          {window.innerWidth > 500 ? <Navbar orientation='horizontal'/> : null}
+        <div style={{position: 'relative', top: -(this.state.offset)/6}} className="big-container">
           {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }
-          <Content />
+          {window.innerWidth > 500 ? 
+            <Navbar 
+              orientation='horizontal'
+              aboutClicked={this.aboutClickedHandler}
+              projectsClicked={this.projectsClickedHandler}
+              musicClicked={this.musicClickedHandler}
+              contactClicked={this.contactClickedHandler}
+              /> : null}
+          {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }
+          <Content page={this.state.page}/>
         </div>
       </div>
     )};

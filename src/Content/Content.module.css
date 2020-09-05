@@ -1,9 +1,14 @@
 .Content {
-    text-align: center;
     background-color: var(--gray);
-    height: 5000px;
+    height: auto;
     position: relative;
     top: 0;
-    margin: 0px;
     padding: 0px;
+}
+
+.Spacer {
+    background-color: var(--dark-green);
+    height: 3px;
+    margin: 50px;
+
 }

@@ -12,11 +12,11 @@ const navigationItem = (props) => {
 
     return (
         <li className={[classes.NavigationItem, sideBorders].join(' ')}>
-            <a 
-                href={props.link} 
+            <div
+                onClick={props.clicked}
                 className={props.active ? classes.Active : null}>
                     {props.children}
-            </a>
+            </div>
         </li>
     );
 };

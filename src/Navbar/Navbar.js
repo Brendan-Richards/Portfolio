@@ -26,7 +26,13 @@ const Navbar = (props) => {
 
     return ( 
       <div className={classes.Navbar}>
-          <NavigationItems orientation={props.orientation}/>
+          <NavigationItems 
+            orientation={props.orientation}
+            aboutClicked={props.aboutClicked}
+            projectsClicked={props.projectsClicked}
+            musicClicked={props.musicClicked}
+            contactClicked={props.contactClicked}
+            />
       </div>    
     );
 }
