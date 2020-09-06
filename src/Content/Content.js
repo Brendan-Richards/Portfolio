@@ -27,10 +27,10 @@ const Content = (props) => {
             titles = ['About Me'];
             images = [Myself];
             explanations = [
-                `<p>Hi, I'm Brendan. I recently graduated from The University of Maryland, Baltimore County with an M.S. in Physics. Before that, 
+                `<p>Hi, I'm Brendan. I recently graduated from The University of Maryland, Baltimore County with a M.S. in Physics. Before that, 
                     I completed my undergrad at MSU Denver with B.S.'s in Computer Science and Physics.</p>
                     <p>I've loved coding since I was young and became particularly interested in machine learning and artificial intelligence as an 
-                    undergrad. Many of my academic projects invlolve the application of these algorithms to my current area of study. 
+                    undergrad. Many of my academic projects involve the application of these algorithms to my current area of study. 
                     Other passions that occupy my life include progressive rock music and quantum physics.</p>
                     <p>I grew up in Colorado and love the outdoors as much as anyone here. Much of my free time is spent running, hiking, 
                     and cycling through the rocky mountains.</p>`
