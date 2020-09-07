@@ -1,31 +1,32 @@
 {
   "files": {
     "main.css": "/static/css/main.8e1f5db9.chunk.css",
-    "main.js": "/static/js/main.e929dc63.chunk.js",
-    "main.js.map": "/static/js/main.e929dc63.chunk.js.map",
+    "main.js": "/static/js/main.cea99968.chunk.js",
+    "main.js.map": "/static/js/main.cea99968.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/js/2.3ed7cf04.chunk.js": "/static/js/2.3ed7cf04.chunk.js",
-    "static/js/2.3ed7cf04.chunk.js.map": "/static/js/2.3ed7cf04.chunk.js.map",
+    "static/js/2.05fd97c1.chunk.js": "/static/js/2.05fd97c1.chunk.js",
+    "static/js/2.05fd97c1.chunk.js.map": "/static/js/2.05fd97c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.272c4dc70d1ca1189c788c47f37e2fb6.js": "/precache-manifest.272c4dc70d1ca1189c788c47f37e2fb6.js",
+    "precache-manifest.3067b0fb3b11db7ea8dd85f5830891c6.js": "/precache-manifest.3067b0fb3b11db7ea8dd85f5830891c6.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.8e1f5db9.chunk.css.map": "/static/css/main.8e1f5db9.chunk.css.map",
-    "static/js/2.3ed7cf04.chunk.js.LICENSE.txt": "/static/js/2.3ed7cf04.chunk.js.LICENSE.txt",
+    "static/js/2.05fd97c1.chunk.js.LICENSE.txt": "/static/js/2.05fd97c1.chunk.js.LICENSE.txt",
     "static/media/Bloch_sphere.svg": "/static/media/Bloch_sphere.b97c8736.svg",
     "static/media/dissonanceCurves.jpg": "/static/media/dissonanceCurves.3f7ae23d.jpg",
     "static/media/email.jpg": "/static/media/email.1ec8b183.jpg",
-    "static/media/meplaying.png": "/static/media/meplaying.25c3d851.png",
-    "static/media/mountain4.jpg": "/static/media/mountain4.2f57ea05.jpg",
-    "static/media/myself.jpg": "/static/media/myself.97ed00d2.jpg",
-    "static/media/phone.png": "/static/media/phone.65aeef73.png",
+    "static/media/meplaying.jpg": "/static/media/meplaying.761dba1d.jpg",
+    "static/media/mountain4.jpg": "/static/media/mountain4.aa8fb754.jpg",
+    "static/media/mountain4_small.jpg": "/static/media/mountain4_small.f9ad7f33.jpg",
+    "static/media/myself.jpg": "/static/media/myself.3cf37c8c.jpg",
+    "static/media/phone.jpg": "/static/media/phone.01d7e230.jpg",
     "static/media/pianoroll.jpg": "/static/media/pianoroll.1e722e95.jpg",
     "static/media/word2vec.png": "/static/media/word2vec.223ba603.png"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
-    "static/js/2.3ed7cf04.chunk.js",
+    "static/js/2.05fd97c1.chunk.js",
     "static/css/main.8e1f5db9.chunk.css",
-    "static/js/main.e929dc63.chunk.js"
+    "static/js/main.cea99968.chunk.js"
   ]
 }
