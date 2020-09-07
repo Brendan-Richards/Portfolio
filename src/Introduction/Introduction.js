@@ -1,5 +1,6 @@
 import React from 'react';
 import mountains from '../images/Intro/mountain4.jpg';
+import mountains_small from '../images/Intro/mountain4_small.jpg';
 import WelcomeText from './WelcomeText/WelcomeText';
 import classes from './Introduction.module.css';
 import DrawerToggle from './DrawerToggle/DrawerToggle';
@@ -26,7 +27,7 @@ const Introduction = (props) => {
                     clicked={props.closeDrawer}
                     />
                 <img 
-                    src={mountains} 
+                    src={window.innerWidth > 500 ? mountains : mountains_small} 
                     className={classes.WelcomeImage}
                     style={{height: window.innerHeight}} 
                     alt="mountains" />

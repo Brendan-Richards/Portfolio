@@ -9,9 +9,9 @@ import Dissonance from '../images/Projects/dissonanceCurves.jpg';
 import Github from '../images/Contact/github.png';
 import Linkedin from '../images/Contact/linkedin.png';
 import Email from '../images/Contact/email.jpg';
-import Phone from '../images/Contact/phone.png';
+import Phone from '../images/Contact/phone.jpg';
 import Resume from '../images/Contact/resume.png';
-import MePlaying from '../images/Music/meplaying.png';
+import MePlaying from '../images/Music/meplaying.jpg';
 
 
 const Content = (props) => {
