@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import Introduction from './Introduction/Introduction';
 import Content from './Content/Content';
 import Navbar from './Navbar/Navbar';
 import classes from './App.module.css';
-import { AutoComplete } from 'rsuite';
+import { Parallax, Background } from 'react-parallax';
+import mountain from './images/Intro/mountain4.jpg';
+import mountainMobile from './images/Intro/mountain4_small.jpg';
+import WelcomeText from './WelcomeText/WelcomeText';
 
 
 class App extends Component {
@@ -11,17 +13,9 @@ class App extends Component {
     super(props);
   
     this.state = {
-      offset: 0,
       showDrawer: false,
       page: 'AboutMe'
     };
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.parallaxShift);
-  }
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.parallaxShift);
   }
 
   toggleClickedHandler = () => {
@@ -33,13 +27,6 @@ class App extends Component {
   topDrawerClosedHandler = () => {
     this.setState({showDrawer: false})
   }
-
-
-  parallaxShift = () => {
-    this.setState({
-      offset: window.pageYOffset
-    });
-  };
 
   aboutClickedHandler = () => {
     this.setState({page: 'AboutMe', showDrawer: false});
@@ -59,34 +46,32 @@ class App extends Component {
 
 
   render () {
-    //console.log(this.state.showDrawer)
+
+    const orientation = window.innerWidth > 500 ? 'horizontal' : 'vertical';
 
     return (
+      <div>
+        <Parallax 
+          bgImage={mountain}
+          strength={500}>
+          <div style={{ height: window.innerHeight}}>
+            <WelcomeText />
+          </div>
+        </Parallax>  
 
-      <div className={classes.Hello}>
-        <Introduction 
-          offset={this.state.offset} 
+        {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }
+        <Navbar 
+          orientation={orientation}
           toggleClicked={this.toggleClickedHandler}
           showDrawer={this.state.showDrawer} 
           closeDrawer={this.topDrawerClosedHandler} 
           aboutClicked={this.aboutClickedHandler}
           projectsClicked={this.projectsClickedHandler}
           musicClicked={this.musicClickedHandler}
-          contactClicked={this.contactClickedHandler}
-          />
-        <div style={{position: 'relative', top: -(this.state.offset)/6}} className="big-container">
-          {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }
-          {window.innerWidth > 500 ? 
-            <Navbar 
-              orientation='horizontal'
-              aboutClicked={this.aboutClickedHandler}
-              projectsClicked={this.projectsClickedHandler}
-              musicClicked={this.musicClickedHandler}
-              contactClicked={this.contactClickedHandler}
-              /> : null}
-          {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }
-          <Content page={this.state.page}/>
-        </div>
+          contactClicked={this.contactClickedHandler} />
+        {window.innerWidth > 500 ? <div className={classes.ContentSpacer}></div> : null }
+        <Content page={this.state.page}/>
+
       </div>
     )};
 }

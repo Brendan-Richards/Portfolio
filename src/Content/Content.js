@@ -32,7 +32,7 @@ const Content = (props) => {
                     <p>I've loved coding since I was young and became particularly interested in machine learning and artificial intelligence as an 
                     undergrad. Many of my academic projects involve the application of these algorithms to my current area of study. 
                     Other passions that occupy my life include progressive rock music and quantum physics.</p>
-                    <p>I grew up in Colorado and love the outdoors as much as anyone here. Much of my free time is spent running, hiking, 
+                    <p>I grew up in Colorado and love the outdoors. Much of my free time is spent running, hiking, 
                     and cycling through the rocky mountains.</p>`
             ];
             links = [];
