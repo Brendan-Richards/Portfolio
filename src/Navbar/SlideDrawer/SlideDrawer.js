@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './SlideDrawer.module.css';
-import Navbar from '../../Navbar/Navbar';
+import NavigationItems from '../NavigationItems/NavigationItems';
 
 const SlideDrawer = (props) => {
 
@@ -11,12 +11,13 @@ const SlideDrawer = (props) => {
 
     return (
         <div className={attachedClasses.join(' ')}>
-            <Navbar 
-                orientation={'vertical'}
-                aboutClicked={props.aboutClicked}
-                projectsClicked={props.projectsClicked}
-                musicClicked={props.musicClicked}
-                contactClicked={props.contactClicked} />
+          <NavigationItems 
+            orientation={props.orientation}
+            aboutClicked={props.aboutClicked}
+            projectsClicked={props.projectsClicked}
+            musicClicked={props.musicClicked}
+            contactClicked={props.contactClicked}
+            />
         </div>
     );
 
