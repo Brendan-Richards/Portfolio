@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <title>French Conjugations</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+        <!-- Main CSS --> 
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+  
+    <body>
+
+         <!-- Main navigation -->
+        <div id="sidebar">
+                      
+            <div class="navbar-expand-md navbar-dark"> 
+            
+                <header class="d-none d-md-block">
+                    <h1>French Conjugation Practice</h1>
+                </header>
+                
+                
+                <!-- Mobile menu toggle and header -->
+                <div class="mobile-header-controls">
+                    <a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#"><span>my</span>website</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SidebarContent" aria-controls="SidebarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+         
+                <div id="SidebarContent" class="collapse flex-column navbar-collapse">
+ 
+                        
+                    
+                    <!-- Main navigation items -->
+                    <nav class="navbar navbar-dark">
+                        <div id="mainNavbar">
+                            <ul class="flex-column mr-auto">
+                                <li class="nav-item">
+								  <a class="nav-link"><input type="checkbox" checked name="Présent" value="Bike">  Présent</a><br>
+                                </li>
+                                <li class="nav-item">
+								  <a class="nav-link"><input type="checkbox" checked name="Imparfait" value="Bike">  Imparfait</a><br>
+                                </li>
+                                <li class="nav-item">
+								  <a class="nav-link"><input type="checkbox" checked name="Futur" value="Bike">  Futur</a><br>
+                                </li>
+                                <li class="nav-item">
+								  <a class="nav-link"><input type="checkbox" checked name="Passé Composé" value="Bike">  Passé Composé</a><br>
+                                </li>
+                                <li class="nav-item">
+								  <a class="nav-link"><input type="checkbox" checked name="Conditionnel" value="Bike">  Conditionnel</a><br>
+                                </li>								
+                                <li class="nav-item">
+									<h2>Which Verbs?</h2>
+									<input type="radio" id="Choice1" name="num-verbs" value="group1">
+									<label for="Choice1" ><a>Group 1</a></label></br>
+									<input type="radio" id="Choice2" name="num-verbs" value="group2">
+									<label for="Choice2" ><a>Group2</a></label></br>
+									<input type="radio" id="Choice3" name="num-verbs" value="group3">
+									<label for="Choice3" ><a>Group 3</a></label></br>
+									<input type="radio" id="Choice4" name="num-verbs" value="group4">
+									<label for="Choice4" ><a>Group 4</a></label></br>
+									<input type="radio" id="Choice5" checked name="num-verbs" checked value="All">
+									<label for="Choice5" ><a>All</a></label>
+                                </li>	
+								
+                            </ul>
+                        </div>   
+                    </nav>
+                                  
+                </div>
+            </div> 
+        </div>
+    
+        
+        <div id="content">
+            <div id="content-wrapper">
+
+                <!-- Jumbtron / Slider -->
+                <div class="jumbotron-wrap">
+                    <div class="container-fluid">
+                        <div class="jumbotron static-slider">
+                            <h1 class="text-center" id='verb'></h1>
+                            <h1 class="lead text-center" id='tense'></h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main content area -->
+                <main class="container-fluid">
+                    <div class="row">
+						
+						<form class="form-inline sidebar-search-form my-2 my-lg-0" style='alignment:center'>
+						<h2 id='subject' style='margin-right:5px'></h2>
+							<input id='text-entry' autocomplete="off" class="form-control mr-sm-2" type="text" size="50" spellcheck="false" placeholder="Enter Conjugation" aria-label="Search">
+							<button class="btn my-2 my-sm-0" type="submit" id='submit'>Submit</button>
+						</form>
+
+                    </div></br> 
+                    <div class="row">
+						<form class="form-inline sidebar-search-form my-2 my-lg-0" style='alignment:center'>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='à'>à</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='è'>è</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='ù'>ù</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='é'>é</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='â'>â</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='ê'>ê</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='î'>î</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='ô'>ô</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='û'>û</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='ë'>ë</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='ï'>ï</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='ü'>ü</button>
+							<button class="btn my-2 my-sm-0" style='margin-right:5px' type="submit" id='ç'>ç</button>
+						</form>
+	  
+                    </div> 					
+                </main>
+				<hr size=2>
+			<div id='stats'></div>
+
+            </div>
+        </div>
+		
+<div id='dialogs'></div>	
+		
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type='text/javascript' src='./javascript/dbSetup.js'></script>
+		<script src="https://unpkg.com/translate@1"></script>
+		
+		<script type='text/javascript'>
+			var dialogOpen = false;
+			var correctAns = '';
+			var tense;
+			var subject;
+			var verb;
+			var stats = [0, //total answers in session
+						 0, //correct answers in session
+						 0]; //wrong answers in session
+
+			$('#à').click(function(){
+				console.log('à was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'à');$('#text-entry').focus();
+				return false;
+			});
+			$('#è').click(function(){
+				console.log('è was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'è');$('#text-entry').focus();
+				return false;
+			});
+			$('#ù').click(function(){
+				console.log('ù was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'ù');$('#text-entry').focus();
+				return false;
+			});
+			$('#é').click(function(){
+				console.log('é was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'é');$('#text-entry').focus();
+				return false;
+			});
+			$('#â').click(function(){
+				console.log('â was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'â');$('#text-entry').focus();
+				return false;
+			});
+			$('#ê').click(function(){
+				console.log('ê was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'ê');$('#text-entry').focus();
+				return false;
+			});
+			$('#î').click(function(){
+				console.log('î was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'î');$('#text-entry').focus();
+				return false;
+			});
+			$('#ô').click(function(){
+				console.log('ô was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'ô');$('#text-entry').focus();
+				return false;
+			});
+			$('#û').click(function(){
+				console.log('û was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'û');$('#text-entry').focus();
+				return false;
+			});
+			$('#ë').click(function(){
+				console.log('ë was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'ë');$('#text-entry').focus();
+				return false;
+			});
+			$('#ï').click(function(){
+				console.log('ï was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'ï');$('#text-entry').focus();
+				return false;
+			});
+			$('#ü').click(function(){
+				console.log('ü was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'ü');$('#text-entry').focus();
+				return false;
+			});
+			$('#ç').click(function(){
+				console.log('ç was clicked');
+				$('#text-entry').val($('#text-entry').val() + 'ç');$('#text-entry').focus();
+				return false;
+			});
+	
+////////////////////////////////////////////////////////////////////////////////////
+			function pickVerbTensePerson(){
+			
+				var subjects = ["Je/J'", 'Tu', 'Il/Elle/on', 'Nous', 'Vous', 'Ils/Elles'];
+				subject = subjects[getRandomInt(0, subjects.length-1)];
+				$('#subject').text(subject);				
+				
+				var tenses = [];
+				if ($('[name="Présent"]').is(':checked')) tenses.push('Présent');
+				if ($('[name="Passé Composé"]').is(':checked')) tenses.push('Passé Composé');
+				if ($('[name="Imparfait"]').is(':checked')) tenses.push('Imparfait');
+				if ($('[name="Futur"]').is(':checked')) tenses.push('Futur');
+				if ($('[name="Conditionnel"]').is(':checked')) tenses.push('Conditionnel');
+
+				tense = tenses[getRandomInt(0, tenses.length-1)];
+				$('#tense').text(tense);
+				
+				var verbs = [];
+				if(document.getElementById('Choice1').checked) {
+					var str = '<verbs>' + g1 + '</verbs>';
+					$(str).find('verb').each(function(){
+						verbs.push($(this).attr('name'));
+					});					
+				}else if(document.getElementById('Choice2').checked) {
+					var str = '<verbs>' + g2 + '</verbs>';
+					$(str).find('verb').each(function(){
+						verbs.push($(this).attr('name'));
+					});					  
+				}else if(document.getElementById('Choice3').checked) {
+					var str = '<verbs>' + g3 + '</verbs>';
+					$(str).find('verb').each(function(){
+						verbs.push($(this).attr('name'));
+					});					  
+				}else if(document.getElementById('Choice4').checked) {
+					var str = '<verbs>' + g4 + '</verbs>';
+					$(str).find('verb').each(function(){
+						verbs.push($(this).attr('name'));
+					});					  
+				}else{//look through all verbs
+					$(db).find('verb').each(function(){
+						verbs.push($(this).attr('name'));
+					});				  
+				}
+			
+				verb = verbs[getRandomInt(0, verbs.length-1)];
+				console.log('choosing from ' +verbs.length+ ' verbs..............');
+				$('#verb').text(verb);
+				
+				/*
+				subject = 'Ils/Elles';
+				tense = 'Passé Composé';
+				verb = 'donner';
+				$('#subject').text(subject);
+				$('#tense').text(tense);
+				$('#verb').text(verb);
+				*/
+			}	
+////////////////////////////////////////////////////////////////////////////////////
+			function removeParens(val){
+				var beg = 0;
+				var end = val.length-1;
+				
+				for(var i=0; i<val.length; i++){
+					if(val.charAt(i) == '('){ beg = i; }
+					if(val.charAt(i) == ')'){ end = i; }
+				}
+				return val.substring(0, beg) + val.substring(end+1, val.length);
+			}	
+
+////////////////////////////////////////////////////////////////////////////////////
+			function correctAnswer(ans){
+			
+				var found = false;
+				var c = 0;
+				$(db).find('verb').each(function(){
+					c +=1;
+					var temp = $(this).attr('name');
+					if($(this).attr('name') == verb){
+						console.log("found verb: " + $(this).attr('name'));
+						$(this).find('tense').each(function(){
+							var temp2 = $(this).attr('name')
+							if($(this).attr('name') == tense){
+								console.log("found tense: " + $(this).attr('name'));
+								$(this).find('conjugation').each(function(){
+									var dbConj = $(this).attr('conj');
+									while(dbConj.includes('(')){
+										dbConj = removeParens(dbConj);
+									}
+									var a = $(this).attr('subject');
+									if($(this).attr('subject') == subject){
+										correctAns = dbConj;		
+									}
+									if(dbConj == ans && $(this).attr('subject') == subject){
+									console.log("found conjugation: " + $(this).attr('conj'));
+										found = true;
+									}
+								});
+							}
+						});
+					}
+				});
+				console.log('in total I found ' + c + ' verbs.......................');
+				return found;
+				
+				
+			}
+			
+
+////////////////////////////////////////////////////////////////////////////////////
+			function celebrate(s){
+				var dialogOptions1 = {
+					height: 'auto',
+					width: 'auto',
+					show: { effect: "highlight", duration: 400, color: "green"},
+					hide: { effect: "slideUp", duration: 200},
+					buttons: [
+						{
+							text: "Ok",
+							icon: "ui-icon-check",
+							click: function() {
+								$( this ).dialog( "close" );
+							}
+						}
+					],
+					close: function(event, uri){
+						$('#dialogs').html('');
+						dialogOpen = false;
+						pickVerbTensePerson();
+						$('#text-entry').focus();
+						
+					}
+				};		
+				
+				if(s.charAt(s.length-1) != "\'"){
+					s = s + ' '; 
+				}				
+				
+				var dict = {
+				  "Home": {
+					pt: "Início"
+				  },
+				  "Download plugin": {
+					pt: "Descarregar plugin",
+					en: "Download plugin"
+				  }
+				}
+				
+				var dialog = "<div id='dialog' title='Correct'><p style='color: green; font-size: 36px;'><span class='trn'>"+s +correctAns+"</span></div>";
+				$('#dialogs').append(dialog);
+				$('#dialog').dialog(dialogOptions1);
+				dialogOpen = true;
+				
+				speakFrench(s + correctAns);
+				//alert("correct!\n\n" + s + correctAns)
+								
+			}
+///////////////////////////////////////////////////////////////////////////////////
+			function punish(s){
+			
+				var dialogOptions2 = {
+					height: 'auto',
+					width: 'auto',
+					show: { effect: "highlight", duration: 400, color: "red"},
+					hide: { effect: "slideUp", duration: 200},
+					buttons: [
+						{
+							text: "Ok",
+							icon: "ui-icon-check",
+							click: function() {
+								$( this ).dialog( "close" );
+							}
+						}
+					],
+					close: function(event, uri){
+						$('#dialogs').html('');
+						dialogOpen = false;
+						pickVerbTensePerson();
+						$('#text-entry').focus();
+					}
+				};			
+			
+				if(s.charAt(s.length-1) != "\'"){
+					s = s + ' '; 
+				}
+				
+				var dialog = "<div id='dialog' title='Wrong'><p style='color: red; font-size: 36px;'>"+s +correctAns+"</></div>";
+				$('#dialogs').append(dialog);
+				$('#dialog').dialog(dialogOptions2);	
+				dialogOpen = true;				
+							
+				
+				//$('#text-field').css("text-color","red");
+				speakFrench(s + correctAns);
+				//alert("Wrong!\n\n" + s + ' ' + correctAns)
+				//$('#text-field').css("text-color","black");
+			
+			}
+////////////////////////////////////////////////////////////////////////////////////
+			function speakFrench(text) {
+				var u = new SpeechSynthesisUtterance();
+				u.text = text;
+				u.lang = 'fr-FR';
+				speechSynthesis.speak(u);
+			}
+/////////////////////////////////////////////////////////////////////////////////////
+
+			$(document).keypress(function(e) {
+				if(e.which == 13 && !dialogOpen) {
+					$('#submit').trigger( "click" );
+				}
+			});
+						
+			pickVerbTensePerson();
+	
+			$('#submit').click(function(){
+			
+				
+				
+				if(!dialogOpen){
+					var s = "";
+					correctAnswer('');
+					if(subject.includes('Je')){
+						if(correctAns.charAt(0) == 'a' || correctAns.charAt(0) == 'e' || correctAns.charAt(0) == 'i' 
+						|| correctAns.charAt(0) == 'o' || correctAns.charAt(0) == 'u' || correctAns.charAt(0) == 'é'
+						|| correctAns.charAt(0) == 'â' ||  correctAns.charAt(0) == 'ê'  || correctAns.charAt(0) == 'î'
+						|| correctAns.charAt(0) == 'ô' || correctAns.charAt(0) == 'û' || correctAns.charAt(0) == 'à'
+						|| correctAns.charAt(0) == 'è'){
+							s = "J'";
+						}
+						else{
+							s = 'Je';
+						}
+					}
+					else if(subject.includes('/')){
+						var result = subject.split('/');
+						s = result[0];
+						//console.log(result);
+					}
+					else{
+						s = subject;
+					}
+					
+					
+					if(correctAnswer($('#text-entry').val())){
+						stats[0]++;
+						celebrate(s);
+						stats[1]++;
+					}
+					else{
+						stats[0]++;
+						punish(s);
+						stats[2]++;
+					}
+					
+					$('#text-entry').val('');
+				
+					$('#stats').html('<h6>Total Answers: '+ stats[0] + '</h6>' +
+									 '<h6>Correct Answers: '+ stats[1] + '</h6>' +
+									 '<h6>Wrong Answers: '+ stats[2] + '</h6>' +
+									 '<h6>Percent Correct: '+ ((stats[1]/stats[0])*100).toFixed(2) + '%</h6>' );
+				}
+				
+				return false;
+			});
+			
+/////////////////////////////////////////////////////////////////////////////////////			
+			 function getXmlDOMFromString(xmlStr){
+				  if (window.ActiveXObject && window.GetObject) { 
+				  // for Internet Explorer
+					   var dom = new ActiveXObject('Microsoft.XMLDOM');
+					   dom.loadXML(xmlStr);
+					   return dom;
+				  }
+				  if (window.DOMParser){ // for other browsers
+					   return new DOMParser().parseFromString(xmlStr,'text/xml');
+				  }
+				  throw new Error( 'No XML parser available' );
+			 }
+/////////////////////////////////////////////////////////////////////////////////////
+			var xmlData   = getXmlDOMFromString(db);
+			
+			 function getXmlAsString(xmlDom){
+				  return (typeof XMLSerializer!=="undefined") ? 
+					   (new window.XMLSerializer()).serializeToString(xmlDom) : 
+					   xmlDom.xml;
+			 }			
+
+			//console.log(v);
+			//console.log(getXmlAsString(xmlData));
+
+			////////////////////////////////////////////////////////////////////////////////////
+			function getRandomInt(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function doGroupSeparation(){
+	var count = 0;
+	var v = [];
+	$(db).find('verb').each(function(){
+		//if(count > 20){ return false; }
+		//console.log($(this).html());
+		count += 1;
+		//v.push('<verb>' + $(this).html() + '</verb>');
+		v.push($(this)[0].outerHTML);
+	});
+
+	console.log('v.length: ' + v.length);
+	correctAnswer('');
+
+
+	for(var i=0; i<30; i++){
+		var temp = v[getRandomInt(0, v.length-1)];
+		g1 += temp + ' ';
+		var index = v.indexOf(temp);
+		v.splice(index, 1);
+		
+		temp = v[getRandomInt(0, v.length-1)];
+		g2 += temp + ' ';
+		index = v.indexOf(temp);
+		v.splice(index, 1);	
+
+		temp = v[getRandomInt(0, v.length-1)];
+		g3 += temp + ' ';
+		index = v.indexOf(temp);
+		v.splice(index, 1);		
+		
+		temp = v[getRandomInt(0, v.length-1)];
+		g4 += temp + ' ';
+		index = v.indexOf(temp);
+		v.splice(index, 1);
+	}
+
+	while(v.length != 0){
+		var temp = v[getRandomInt(0, v.length-1)];
+		g1 += temp + ' ';
+		var index = v.indexOf(temp);
+		v.splice(index, 1);
+	}
+
+	console.log('v.length: ' + v.length);
+	console.log(g1.length);
+	console.log(g2.length);
+	console.log(g3.length);
+	console.log(g4.length);
+}
+
+//doGroupSeparation();
+//console.log(g1);
+//console.log(g2);
+//console.log(g3);
+//console.log(g4);
+	</script>
+		
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

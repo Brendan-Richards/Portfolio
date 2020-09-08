@@ -12,6 +12,7 @@ import Email from '../images/Contact/email.jpg';
 import Phone from '../images/Contact/phone.jpg';
 import Resume from '../images/Contact/resume.png';
 import MePlaying from '../images/Music/meplaying.jpg';
+import French from '../images/French/french.jpg';
 
 
 const Content = (props) => {
@@ -40,8 +41,8 @@ const Content = (props) => {
             break;
         }
         case 'Projects': {
-            titles = ['Melody Maker', 'Amazon Review Sentiment Analysis', 'Quantum Control Pulse Optimization', 'Perception and Dissonance'];
-            images = [Pianoroll, Sentiment, BlochSphere, Dissonance];
+            titles = ['Melody Maker', 'Amazon Review Sentiment Analysis', 'Quantum Control Pulse Optimization', 'Perception and Dissonance', 'French Verb Practice'];
+            images = [Pianoroll, Sentiment, BlochSphere, Dissonance, French];
             explanations = [
                 `<p>Melody Maker is a project that uses a 
                     <a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target='_blank' rel="noopener noreferrer">Genetic Algorithm</a>
@@ -70,19 +71,25 @@ const Content = (props) => {
                     consonance (pleasantness) and dissonance (unpleasantness) produced by 22 different band instruments. I presented my 
                     research at 2 conferences with <a href="./Dissonance/Perception and Dissonance.pdf" download>this poster</a> and wrote 
                     <a href="./Dissonance/perception and Dissonance-Brendan Richards.pdf" download>this paper</a> detailing my findings.
-                    </p>`
+                    </p>`,
+                `<p>When I was learning french I wanted a tool that would allow me to practice my verb conjugation rapidly
+                    and provide the correct pronunciation with every conjugation attempt. This tool is the result. 
+                    It allows you to select which tenses/verbs you want to practice and lets you easily enter accented characters.</p>
+                    <p>The tool was written with plain HTML/CSS and JQuery.</p>`
             ];
             links = [
                 'https://github.com/Brendan-Richards/MelodyMaker',
                 'https://github.com/Brendan-Richards/Sentiment-Analysis',
                 'https://github.com/Brendan-Richards/QCPO',
-                'https://github.com/Brendan-Richards/Dissonance'
+                'https://github.com/Brendan-Richards/Dissonance',
+                './Conjugation/conjugation.html'
             ];
             linkTexts = [
                 'See Melody Maker source code',
                 'See my sentiment analysis project on Github',
                 'See QCPO source code',
-                'See Perception and Dissonance on Github'
+                'See Perception and Dissonance on Github',
+                'Practice your French Verbs'
             ];
             break;
         }
