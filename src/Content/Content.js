@@ -32,7 +32,7 @@ const Content = (props) => {
                     <p>I've loved coding since I was young and became particularly interested in machine learning and artificial intelligence as an 
                     undergrad. Many of my academic projects involve the application of these algorithms to my current area of study. 
                     Other passions that occupy my life include progressive rock music and quantum physics.</p>
-                    <p>I grew up in Colorado and love the outdoors as much as anyone here. Much of my free time is spent running, hiking, 
+                    <p>I grew up in Colorado and love the outdoors. Much of my free time is spent running, hiking, 
                     and cycling through the rocky mountains.</p>`
             ];
             links = [];
@@ -43,17 +43,19 @@ const Content = (props) => {
             titles = ['Melody Maker', 'Amazon Review Sentiment Analysis', 'Quantum Control Pulse Optimization', 'Perception and Dissonance'];
             images = [Pianoroll, Sentiment, BlochSphere, Dissonance];
             explanations = [
-                `<p>Melody Maker is a project that uses a <a href="https://en.wikipedia.org/wiki/Genetic_algorithm">Genetic Algorithm</a>
+                `<p>Melody Maker is a project that uses a 
+                    <a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target='_blank' rel="noopener noreferrer">Genetic Algorithm</a>
                     to create original melodies for music. It works by creating a set of melodies (a population), determining their worth
                     based on a pre-defined fitness metric, allowing the melodies to randomly change (mutation), creating a new population 
                     by preferentially combining high fitness melodies from the current population, and repeating this process until
                     stopping criteria are satisfied.</p>  <p>The code was written in Python and makes use of the mido library to export Midi
                     files after the algorithm has run. Some examples of music I've generated can be found 
-                    <a href="./Midi/example1.mid" download>here</a> and <a href="./Midi/example2.mid">here</a>.</p>`,
+                    <a href="./Midi/example1.mid" download>here</a> and <a href="./Midi/example2.mid" download>here</a>.</p>`,
                 `<p>This project is an exploratory effort to classify text as having a positive, neutral, or negative sentiment. Standard
                     classification algorithms require large datasets of labeled training data. Such a dataset can be found by collecting 
                     amazon product reviews which each contain some review text and a corresponding numeric score from 1 to 5. The dataset used for 
-                    this project can be found <a href="http://deepyeti.ucsd.edu/jianmo/amazon/">here</a>.</p>
+                    this project can be found 
+                    <a href="http://deepyeti.ucsd.edu/jianmo/amazon/" target='_blank' rel="noopener noreferrer">here</a>.</p>
                     <p>Using several python libraries including sklearn, pandas, and numpy, I created a numeric representation of the 
                         text data that machine learning models could understand and trained on hundreds of thousands of examples.
                         I achieved 71% validation accuracy making use of several ensemble methods.</p>`,
@@ -62,12 +64,12 @@ const Content = (props) => {
                     the quantum states of these systems. Researchers manipulate quantum systems in the lab by applying timed electromagnetic pulses. 
                     Determining the optimal amplitude shape turns out to be a complex optimization problem.</p> <p>This project is my 
                     attempt at optimizing pulse shapes with various algorithms and running them on real IBM devices via their
-                    <a href="https://quantum-computing.ibm.com/">Quantum Experience API</a>.</p>`,
+                    <a href="https://quantum-computing.ibm.com/" target='_blank' rel="noopener noreferrer">Quantum Experience API</a>.</p>`,
                 `<p>This project was done while I was a physics undergrad at MSU Denver. Based on the work of 
-                    <a href="https://sethares.engr.wisc.edu/">Dr. William Sethares</a>, we attempted to quantify the musical 
+                    <a href="https://sethares.engr.wisc.edu/" target='_blank' rel="noopener noreferrer">Dr. William Sethares</a>, we attempted to quantify the musical 
                     consonance (pleasantness) and dissonance (unpleasantness) produced by 22 different band instruments. I presented my 
-                    research at 2 conferences with <a href="./Dissonance/Perception and Dissonance.pdf">this poster</a> and wrote 
-                    <a href="./Dissonance/perception and Dissonance-Brendan Richards.pdf">this paper</a> detailing my findings.
+                    research at 2 conferences with <a href="./Dissonance/Perception and Dissonance.pdf" download>this poster</a> and wrote 
+                    <a href="./Dissonance/perception and Dissonance-Brendan Richards.pdf" download>this paper</a> detailing my findings.
                     </p>`
             ];
             links = [

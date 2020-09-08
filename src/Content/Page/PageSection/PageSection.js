@@ -26,7 +26,7 @@ const PageSection = (props) => {
                             <img src={props.image} height='50px' width='50px' alt={props.linkText}/>
                         </a>
                     </div>
-                    <div className={classes.ContactLink}><a href={props.link}>{props.linkText}</a></div>
+                    <div className={classes.ContactLink}><a href={props.link} target='_blank' rel="noopener noreferrer">{props.linkText}</a></div>
                 </div>
             </div>
         ); 
@@ -43,7 +43,7 @@ const PageSection = (props) => {
                     className={classes.Explanation} 
                     dangerouslySetInnerHTML={{__html: props.explanation }}></div>
             </div>
-            <div className={classes.Link}><a href={props.link}>{props.linkText}</a></div>
+            <div className={classes.Link}><a href={props.link} target='_blank' rel="noopener noreferrer">{props.linkText}</a></div>
         </div>
     );
 };
