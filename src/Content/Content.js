@@ -89,7 +89,7 @@ const Content = (props) => {
                 'See my sentiment analysis project on Github',
                 'See QCPO source code',
                 'See Perception and Dissonance on Github',
-                'Practice your French Verbs'
+                'Practice your French Verbs (not intended for mobile)'
             ];
             break;
         }
@@ -117,14 +117,14 @@ const Content = (props) => {
             links = [
                 'mailto:brendanrichards8@gmail.com',
                 'javascript:void(0)',
-                './Resume/brendan_richards_resume.pdf',
+                './Resume/brendan_richards_resume_9.9.20.pdf',
                 'https://www.linkedin.com/in/brendan-richards/',
                 'https://github.com/Brendan-Richards'
             ];
             linkTexts = [
                 'brendanrichards8@gmail.com',
                 '(720)-937-7197',
-                'Resume (Download)',
+                'Resume',
                 'Linkedin',
                 'Github'
             ];

@@ -33,7 +33,6 @@ const PageSection = (props) => {
     }
 
 
-
     return (
         <div className={classes.Section}>
             <p className={classes.Title}>{props.title}</p>
