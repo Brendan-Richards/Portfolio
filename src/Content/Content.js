@@ -41,8 +41,8 @@ const Content = (props) => {
             break;
         }
         case 'Projects': {
-            titles = ['Melody Maker', 'Amazon Review Sentiment Analysis', 'Quantum Control Pulse Optimization', 'Perception and Dissonance', 'French Verb Practice'];
-            images = [Pianoroll, Sentiment, BlochSphere, Dissonance, French];
+            titles = ['Melody Maker', 'Amazon Review Sentiment Analysis', 'Quantum Control Pulse Optimization', 'Perception and Dissonance'] //, 'French Verb Practice'];
+            images = [Pianoroll, Sentiment, BlochSphere, Dissonance] //, French];
             explanations = [
                 `<p>Melody Maker is a project that uses a 
                     <a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target='_blank' rel="noopener noreferrer">Genetic Algorithm</a>
@@ -72,24 +72,24 @@ const Content = (props) => {
                     research at 2 conferences with <a href="./Dissonance/Perception and Dissonance.pdf" download>this poster</a> and wrote 
                     <a href="./Dissonance/perception and Dissonance-Brendan Richards.pdf" download>this paper</a> detailing my findings.
                     </p>`,
-                `<p>When I was learning french I wanted a tool that would allow me to practice my verb conjugation rapidly
-                    and provide the correct pronunciation with every conjugation attempt. This tool is the result. 
-                    It allows you to select which tenses/verbs you want to practice and lets you easily enter accented characters.</p>
-                    <p>The tool was written with plain HTML/CSS and JQuery.</p>`
+                // `<p>When I was learning french I wanted a tool that would allow me to practice my verb conjugation rapidly
+                //     and provide the correct pronunciation with every conjugation attempt. This tool is the result. 
+                //     It allows you to select which tenses/verbs you want to practice and lets you easily enter accented characters.</p>
+                //     <p>The tool was written with plain HTML/CSS and JQuery.</p>`
             ];
             links = [
                 'https://github.com/Brendan-Richards/MelodyMaker',
                 'https://github.com/Brendan-Richards/Sentiment-Analysis',
                 'https://github.com/Brendan-Richards/QCPO',
                 'https://github.com/Brendan-Richards/Dissonance',
-                './Conjugation/conjugation.html'
+                // './Conjugation/conjugation.html'
             ];
             linkTexts = [
                 'See Melody Maker source code',
                 'See my sentiment analysis project on Github',
                 'See QCPO source code',
                 'See Perception and Dissonance on Github',
-                'Practice your French Verbs (not intended for mobile)'
+                // 'Practice your French Verbs (not intended for mobile)'
             ];
             break;
         }
@@ -117,7 +117,7 @@ const Content = (props) => {
             links = [
                 'mailto:brendanrichards8@gmail.com',
                 'javascript:void(0)',
-                './Resume/brendan_richards_resume_9.9.20.pdf',
+                './Resume/brendan_richards_resume.pdf',
                 'https://www.linkedin.com/in/brendan-richards/',
                 'https://github.com/Brendan-Richards'
             ];
